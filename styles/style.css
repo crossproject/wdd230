@@ -63,3 +63,8 @@ header .box {
   margin: auto;
   text-align: left;
 }
+
+.lessons ul li a {
+  font-style: italic;
+  color: #406E8E;
+}
