@@ -1,22 +1,65 @@
-/* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&family=Varela+Round&display=swap");
+/*
+Color Pallete
+#161925 - Rising Black
+#23395B - Prussian Blue
+#406E8E - Queen Blue
+#8EA8C3 - Cadet Grey
+#FDFFF7 - Baby Powder
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400");
 
 body {
+	background-color: #fdfff7;
+	justify-content: center;
   font-family: "Ubuntu", sans-serif;
 }
 
-.content {
-  max-width: 960px;
+main {
+  background-color: #8EA8C3;
+	border: 1px solid #ffffff;
+	max-width: 600px;
   margin: 0 auto;
-  background-color: blue;
 }
 
-.top-box {
-    background-color: darkviolet;
-    font-size: 1.1em;
-    padding: 1em;
+
+main h2 {
+  background-color: #23395B;
+  color: #ffffff;
+  margin: 0;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
 }
 
-.top-box img {
-    width: 10em;
+header .box {
+	padding: 2rem;
+}
+
+.content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.box {
+  border: 1px solid #000;
+  box-shadow: 0 0 20px #000;
+  display:grid;
+  margin: 1rem;
+	background-color:#161925;
+	color: #ffffff; 
+  text-align: center;
+}
+
+.box img {
+  max-height: 10em;
+  grid-column: 1 / 2;
+  margin: 0 auto;
+}
+
+.box h1 {
+  grid-column: 2 / 3;
+  margin: auto;
+  text-align: left;
 }
