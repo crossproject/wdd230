@@ -1,0 +1,9 @@
+@media (min-width:32.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+    .large-section {
+        grid-column: 1/3;
+    }
+}
