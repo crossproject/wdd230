@@ -7,8 +7,6 @@ Color Pallete
 #FDFFF7 - Baby Powder
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400");
-
 body {
 	background-color: #fdfff7;
 	justify-content: center;
@@ -18,8 +16,6 @@ body {
 main {
   background-color: #8EA8C3;
 	border: 1px solid #ffffff;
-	max-width: 600px;
-  margin: 0 auto;
 }
 
 
@@ -27,7 +23,6 @@ main h2 {
   background-color: #23395B;
   color: #ffffff;
   margin: 0;
-  width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   text-align: center;
@@ -46,7 +41,8 @@ header .box {
   border: 1px solid #000;
   box-shadow: 0 0 20px #000;
   display:grid;
-  margin: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 	background-color:#161925;
 	color: #ffffff; 
   text-align: center;
@@ -54,14 +50,17 @@ header .box {
 
 .box img {
   max-height: 10em;
-  grid-column: 1 / 2;
+  padding-top: 0.5em;
   margin: 0 auto;
 }
 
 .box h1 {
-  grid-column: 2 / 3;
-  margin: auto;
-  text-align: left;
+  margin: 0 auto;
+  padding-top: 0.5em;
+}
+
+.lessons ul li {
+  padding-top: 0.25em;
 }
 
 .lessons ul li a {

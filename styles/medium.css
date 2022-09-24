@@ -1,0 +1,13 @@
+@media (min-width:32.5em) {
+    header .box {
+        max-width: 600px;
+    }
+    .box img {
+        grid-column: 1 / 2;
+      }
+    .box h1 {
+    grid-column: 2 / 3;
+    margin: auto;
+    text-align: center;
+    }
+}
