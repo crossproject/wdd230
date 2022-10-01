@@ -1,0 +1,22 @@
+@media (min-width:64em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    .large-section {
+        grid-column: auto;
+    }
+
+    .big-box {
+        grid-column: 1/4;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+      }
+
+
+
+}

@@ -1,0 +1,163 @@
+/*
+Color Pallete
+#161925 - Rising Black
+#23395B - Prussian Blue
+#406E8E - Queen Blue
+#8EA8C3 - Cadet Grey
+#FDFFF7 - Baby Powder
+*/
+
+body {
+	background-color: #fdfff7;
+	justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+header .box {
+	padding: 2rem;
+}
+
+/* Navigation bar*/
+nav {
+  padding-bottom: 1em;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  background-color: #161925;
+  font-size: 1.25em;
+  padding: 10px 0px;
+  display: flex;
+	flex-direction: column;
+}
+
+nav ul li { 
+  flex: 1 1 auto;
+} 
+
+nav ul li a {
+  display: block;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #FDFFF7;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav ul a:hover {
+  background-color: #264653;
+
+}
+
+/******************************/
+
+main {
+	border: 1px solid #ffffff;
+  
+  text-align: center;
+}
+
+
+
+section {
+ border: 1px solid #000;
+ border-radius: 1em;
+ overflow: hidden;
+ background-color: #8EA8C3;
+ margin-bottom: 2em;
+ padding-bottom: 1rem;
+}
+
+section h2 {
+  background-color: #23395B;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+section span {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+
+section img {
+  max-width: 15em;
+  padding: 0.5rem;
+}
+
+.logo-example {
+  background: #ffffff;
+  border-radius: 1em;
+}
+
+section p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.box {
+  border: 1px solid #000;
+  box-shadow: 0 0 20px #000;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+	background-color:#161925;
+	color: #ffffff; 
+  text-align: center;
+}
+
+
+.box h1 {
+  margin: 0 auto;
+  padding-top: 0.5em;
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5 {
+  
+  height: auto;  
+  border-radius: 1em;
+  padding: 1rem;
+  margin: 1em;
+}
+
+.color-1 {
+  background-color: #000814;
+  color: #ffffff;
+}
+.color-2 {
+  background-color: #001D3D;
+  color: #ffffff;
+}
+.color-3 {
+  background-color: #003566;
+  color: #ffffff;
+}
+.color-4 {
+  background-color: #FFC300;
+}
+.color-5 {
+  background-color: #FFD60A;
+}
+
+.typography h3 {
+  font-family: 'Kanit', sans-serif;
+}
+
+.typography p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.persona-section ul {
+  text-align: left;
+}
