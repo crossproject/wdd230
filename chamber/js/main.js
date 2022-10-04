@@ -9,11 +9,11 @@ dateDiv.innerHTML = `<span>${fullDate}</span>`;
 
 // Menu Button
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("menu");
-    document.getElementById("menuBtn").classList.toggle("menu");
+    document.getElementById("primary-nav").classList.toggle("menu");
+    document.getElementById("menu-btn").classList.toggle("menu");
 }
 
-const menuBtn = document.getElementById("menuBtn")
+const menuBtn = document.getElementById("menu-btn")
 menuBtn.onclick = toggleMenu;
 
 

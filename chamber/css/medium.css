@@ -1,0 +1,58 @@
+@media (min-width:32.5em) {
+.hero,
+.news,
+.spotlights,
+.join {
+    width: 90%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.spotlights {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+}
+.spotlight {
+    height: auto;
+}
+.join {
+    
+    display: block;
+}
+
+.event {
+    order: 1;
+    
+}
+
+.weather {
+    order: 2;
+    
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    font-size: 0.8em;
+}
+
+footer .logo {
+    margin: 0;
+}
+.bottom-info,
+.bottom-box {
+    margin: 1em;
+}
+
+.bottom-box {
+    border-top: none;
+}
+
+}
