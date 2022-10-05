@@ -1,0 +1,81 @@
+@media (min-width:64em) {
+
+.optional-spotlight {
+        display: block;
+}
+
+header {
+    justify-content: left;
+}
+
+.logo {
+    margin: 0 0.5em;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.upside-bar nav ul {
+    display: flex;
+    flex-direction: row;
+}
+main {
+    height: 40em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.clear-div {
+    grid-column: 1;
+    grid-row: 1/3;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.join {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.hero {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+.news {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.spotlights {
+    grid-column: 3;
+    grid-row: 1/4;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+.spotlight {
+    height: auto;
+}
+.event,
+.weather,
+.join,
+.hero,
+.news,
+.spotlights {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+footer {
+    font-size: 1rem;
+}
+
+.bottom-box {
+    width: auto;
+    flex-direction: row;
+}
+}

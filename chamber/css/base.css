@@ -1,12 +1,12 @@
 header {
     display: flex;
     align-items: center;
-	justify-content: space-between;
+	justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
 .logo {
-    width: 8rem;
+    height: 4.5rem;
     margin: auto;
 }
 
@@ -89,20 +89,34 @@ nav ul.menu {display:block}
 #menu-btn.menu span:nth-child(2) {display: block;}
 
 main div {
-    width: 22rem;
-    height: 15em;
+    width: auto;
+    height: 15rem;
     background-color: #D3D3D3;
-    border: 2px solid #000;
+    border: 0.125rem solid #000;
     margin: 1em;
     padding: 1rem;
     font-family: "Raleway",sans-serif;
 }
 
+.clear-div {
+    height: auto;
+    background-color: unset;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.spotlights {
+    height: auto;
+}
+
 .spotlight {
-    height: 5rem;
-    width: auto;
+    height: 7.5rem;
     padding: 1em;
     margin: 0;
+}
+
+.optional-spotlight {
+    display: none;
 }
 
 .join {
@@ -144,4 +158,13 @@ footer span {
     padding-top: 5px;
     display: flex;
     flex-direction: column;
+}
+
+.location-info,
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+.autor {
+    font-weight: bold;
 }
