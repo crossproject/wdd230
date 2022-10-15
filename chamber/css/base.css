@@ -15,7 +15,7 @@ header h1 {
     color: #003566;
 }
 
-.upside-bar{
+.upside-bar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@ nav ul.menu {display:block}
 
 .enable-banner {
     display: block;
-    position: sticky;
+    
     top: 20px;
     height: auto;
     font-size: .8rem;
@@ -104,7 +104,8 @@ nav ul.menu {display:block}
     background-color: #FFC300;
     max-width: 450px;
     align-self: center;
-    
+    position: sticky;
+    z-index: 9999;
 }
 
 .enable-banner a {
@@ -121,13 +122,49 @@ nav ul.menu {display:block}
 main div {
     width: auto;
     height: 15rem;
-    background-color: #D3D3D3;
+    background-color: #1457a9a8;
     border: 0.125rem solid #000;
     margin: 1em;
     padding: 1rem;
     font-family: "Raleway",sans-serif;
 }
 
+main div h3 {
+    margin-top: 0.5rem;
+    color: #FFC300;
+    font-style: italic;
+}
+.news {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.news h3,
+.news p,
+.news a {
+    grid-column: 1;
+}
+.news img {
+    grid-column: 2;
+    grid-row: 1/4;
+    align-self: center;
+    max-width: 200px;
+    margin-left: 20px;
+}
+.event {
+    height: auto;
+}
+.event h3 {
+    font-size: 2.5rem;
+}
+.event a,
+.news a {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
 .clear-div {
     height: auto;
     background-color: unset;
@@ -135,6 +172,7 @@ main div {
     margin: 0;
     padding: 0;
 }
+
 .spotlights {
     height: auto;
 }
@@ -145,12 +183,67 @@ main div {
     margin: 0;
 }
 
+.spotlight-description {
+    border-bottom: solid 2px #FFD60A;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.spotlight img {
+    width: 30%;
+}
+.spotlight span {
+    color: #FFD60A;
+}
+.spotlight a {
+    text-decoration: none;
+    color: #FFD60A;
+}
+
+/*
+.spot-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.spot-1 img {
+    width: 30%;
+}
+.spot-1 span {
+    color: #FFD60A;
+    margin-top: 1em;
+}
+.spot-1 a {
+    text-decoration: none;
+    color: #FFD60A;
+}
+*/
 .optional-spotlight {
     display: none;
 }
 
 .join {
     display: none;
+}
+
+.weather {
+    background-color: #fff;
+    background-image: url(../images/under-construction.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.weather h3 {
+    color: #003566;
 }
 footer {
     background: #000814;
@@ -198,3 +291,30 @@ footer span {
 .autor {
     font-weight: bold;
 }
+
+.hero {
+    background-image: url(../images/santa-fe.jpg);
+    background-position: center;
+}
+.hero h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-style: italic;   
+}
+.hero a {
+    display: block;
+    width: 30%;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFC300;
+    border-radius: 5px;
+    box-shadow: 2px 3px 9px #000;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: -4.5rem;
+}
+
