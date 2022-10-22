@@ -1,4 +1,4 @@
-@media (min-width:69em) {
+@media (min-width:75.80em) {
 
 .optional-spotlight {
         display: flex;
@@ -51,10 +51,13 @@ main {
 .hero {
     grid-column: 2;
     grid-row: 1/3;
+    
 }
+
 .news {
     grid-column: 2;
     grid-row: 3;
+    
 }
 .news h3 {
     font-size: 1.5rem;
@@ -91,6 +94,48 @@ footer {
 .bottom-box {
     width: auto;
     flex-direction: row;
+}
+
+
+
+
+
+.weather {
+    
+    
+    
+    padding: 1rem;
+}
+.weather h3 {
+    margin: 0;
+    
+}
+.weather h4 {
+    font-size: 2rem;
+    
+    min-width: auto;
+}
+.weather span {
+    text-align: center;
+    
+}
+.weather-temperature {
+    
+    margin: auto;
+    padding: 0;
+    
+}
+.weather-temperature img {
+    max-height: 40px;
+}
+
+.weather-status {
+
+    font-size: 1.15rem;
+}
+.weather-wchill,
+.weather-wspeed {
+    font-size: 1rem;
 }
 
 }

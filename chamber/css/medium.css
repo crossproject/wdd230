@@ -48,6 +48,9 @@ main {
     font-style: italic;
     margin: 1.5rem;
 }
+.hero {
+    height: 50vw;
+}
 .hero a {
     display: none;
 }
@@ -64,6 +67,7 @@ main {
     margin-left: 0.5rem;
     margin-top: 0.5rem;
 }
+
 footer .logo {
     margin: 0;
     margin-right: 1em;

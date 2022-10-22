@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="images/logo.png" alt="sfcc logo" class="logo"></a>
+        <a href="./index.html"><img src="images/logo.webp" alt="sfcc logo" class="logo"></a>
         <h1>Santa Fe Chamber of Commerce</h1>
         
         <div class="upside-bar">
@@ -49,16 +49,38 @@
             <span><a href="#">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</a><button id="close-banner">✖</button></span>
         </div>
         <div class="hero">
+            
+            
+            
             <h3>Welcome to Santa Fe</h3>
             <a href="#">Join the Chamber</a>
+            
+            <picture>
+                <source media="(max-width: 39.99em)" srcset="images/wdd230-org-640.webp">
+                <source media="(max-width: 75.79em)" srcset="images/wdd230-org-1100.webp">
+                <img src="images/wdd230-org.webp" alt="Responsive Activity Image">
+            </picture>
         </div>
         <div class="clear-div">
             <div class="event">
                 <h3>Spring is Here!</h3>
-                <p>We are preparing for this season with a series of offers and projects that can promote consumption and free trade in the city. New members can request a platinum membership at a 50% discount.</p>
+                <p>We are preparing for this season with a series of offers and projects that can promote consumption and free trade in the city.</p>
                 <a href="#">Read more...</a>
             </div>
-            <div class="weather"><h3>Weather</h3></div>
+            <div class="weather">
+                
+                <h3>Weather</h3>
+                <div class="weather-temperature">
+                    <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">
+                        <img src="images/cloudy.png" alt="sunny cloudy">
+                    </a>
+                    
+                <h4><span id="temp-celcius">23</span> ºC</h4>
+                </div>
+                <span class="weather-status">Sunny Cloudy</span>
+                <span class="weather-wspeed">Wind Speed: <span id="wind-speed">8</span> km/h</span>
+                <span class="weather-wchill">Wind Chill: <span id="wind-chill"></span></span>
+            </div>
         </div>
         <div class="news">
             <h3>September inflation was 6.2%</h3>
@@ -70,19 +92,40 @@
         <div class="spotlights">
             <div class="spotlight spot-1">
                 <h3>Billetera Santa Fe</h3>
-                <img src="images/billetera-santa-fe.png" alt="billetera santa fe logo">
+
+                <picture>
+                    <source media="(max-width: 39.99em)" srcset="images/billetera-santa-fe-75px.png">
+                    <source media="(max-width: 75.79em)" srcset="images/billetera-santa-fe-122px.png">
+                    <img src="images/billetera-santa-fe-48px.png" alt="billetera santa fe">
+                </picture>
+
+                
                 <span class="spotlight-description">Get a 30% discount!</span>
                 <span class="spotlight-contact-info"><a href="www.pluspagos.com" target="_blank">www.pluspagos.com</a></span>
             </div>
             <div class="spotlight spot-2">
                 <h3>MODO</h3>
-                <img src="images/modo.png" alt="modo logo">
+
+                <picture>
+                    <source media="(max-width: 39.99em)" srcset="images/modo-75px.png">
+                    <source media="(max-width: 75.79em)" srcset="images/modo-122px.png">
+                    <img src="images/modo-48px.png" alt="modo">
+                </picture>
+
+                
                 <span class="spotlight-description">Connect your money</span>
                 <span class="spotlight-contact-info"><a href="www.modo.com.ar" target="_blank">www.modo.com.ar</a></span>
             </div>
             <div class="spotlight optional-spotlight spot-3">
                 <h3>Banco Santa Fe</h3>
-                <img src="images/banco-santa-fe.png" alt="banco santa fe logo">
+
+                <picture>
+                    <source media="(max-width: 39.99em)" srcset="images/banco-santa-fe-75px.png">
+                    <source media="(max-width: 75.79em)" srcset="images/banco-santa-fe-122px.png">
+                    <img src="images/banco-santa-fe-48px.png" alt="banco santa fe">
+                </picture>
+
+                
                 <span class="spotlight-description">Get your card!</span>
                 <span class="spotlight-contact-info"><a href="www.bancosantafe.com.ar" target="_blank">www.bancosantafe.com.ar</a></span>
             </div>
@@ -96,7 +139,7 @@
     <footer>
         
         <div class="bottom-info">
-            <img src="images/logo.png" alt="sfcc logo" class="logo">
+            <img src="images/logo.webp" alt="sfcc logo" class="logo">
 
             <div class="location-info">
                 <span>Santa Fe Chamber of Commerce</span>
@@ -121,4 +164,5 @@
     </footer>
 </body>
 <script src="js/main.js"></script>
+<script src="js/windchill.js"></script>
 </html>

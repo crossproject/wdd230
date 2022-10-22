@@ -13,6 +13,7 @@ header {
 header h1 {
     font-family: "Kanit", sans-serif;
     color: #003566;
+    margin-left: 20px;
 }
 
 .upside-bar {
@@ -137,16 +138,19 @@ main div h3 {
 .news {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    height: auto;
 }
 
-.news h3,
+.news h3 {
+    grid-column: 1/3;
+}
 .news p,
 .news a {
     grid-column: 1;
 }
 .news img {
     grid-column: 2;
-    grid-row: 1/4;
+    grid-row: 2/4;
     align-self: center;
     max-width: 200px;
     margin-left: 20px;
@@ -196,9 +200,7 @@ main div h3 {
     align-items: center;
     height: auto;
 }
-.spotlight img {
-    width: 30%;
-}
+
 .spotlight span {
     color: #FFD60A;
 }
@@ -236,15 +238,48 @@ main div h3 {
 
 .weather {
     background-color: #fff;
-    background-image: url(../images/under-construction.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 3rem 2rem;
+}
+.weather h3 {
+    margin: 0;
+    color: #003566;
+}
+.weather h4 {
+    font-size: 3rem;
+    margin: auto 20px;
+    min-width: 120px;
+}
+.weather span {
+    text-align: center;
+
+}
+.weather-temperature {
+    height: auto;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
     
 }
 
-.weather h3 {
-    color: #003566;
+.weather-status {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    font-size: 2rem;
 }
+.weather-wchill,
+.weather-wspeed {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+.weather-wspeed {
+    margin-top: 5px;
+}
+
 footer {
     background: #000814;
     color: #FFC300;
@@ -293,18 +328,25 @@ footer span {
 }
 
 .hero {
-    background-image: url(../images/santa-fe.jpg);
-    background-position: center;
+    
+    height: auto;
+    padding: 0;
+    background-color: #fff;
+    border: none;
+    overflow: hidden;
 }
 .hero h3 {
     font-size: 2rem;
-    color: #fff;
-    font-style: italic;   
+    color: #000;
+    font-style: italic;
+    margin: 0;
+
 }
 .hero a {
     display: block;
     width: 30%;
     padding: .8rem 2vw;
+    margin: 0;
     text-decoration: none;
     color: #000;
     background-color: #FFC300;
@@ -316,5 +358,13 @@ footer span {
     text-align: center;
     position: relative;
     bottom: -4.5rem;
-}
 
+}
+.hero picture { 
+    z-index: -1;
+
+}
+ .hero picture img {
+    width: 100%;
+
+ }
