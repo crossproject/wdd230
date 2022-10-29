@@ -1,5 +1,5 @@
 // TEST
-const imagesToLoad = document.querySelectorAll("picture");
+const imagesToLoad = document.querySelectorAll("picture img[data-src]");
 
 const imgOptions = {
     threshold: 0.5,
@@ -7,8 +7,11 @@ const imgOptions = {
 };
 
 const loadImages = (image) => {
-    image.setAttribute("src",image.getAttribute("srcset"));
-    image.onload = () => {image.removeAttribute("srcset");};
+    
+    image.setAttribute("src",image.getAttribute("data-src"));
+    console.log(image.getAttribute("src"))
+    image.onload = () => {image.removeAttribute("data-src");};
+
 };
 
 if("IntersectionObserver" in window) {

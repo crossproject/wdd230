@@ -302,6 +302,9 @@ main div h3 {
 .discover-section h3 {
     margin: 0 auto;
 }
+.discover-section picture img {
+    width: 200px;
+}
 
 .demographics {
     background-color: #003566;
