@@ -1,3 +1,4 @@
+/****** MEDIUM STYLE ******/
 @media (min-width:40em) {
 h1,
 .social-media-logo {
@@ -54,6 +55,9 @@ main {
 .hero a {
     display: none;
 }
+.news img {
+    justify-self: center;
+}
 .clear-div {
     order: 1;
     display: grid;
@@ -91,7 +95,8 @@ footer .logo {
 }
 .bottom-box span:nth-child(1),
 .bottom-box span:nth-child(2),
-.bottom-box span:nth-child(3) {
+.bottom-box span:nth-child(3),
+.bottom-box span:nth-child(4) {
     border-right: 2px solid #FFC300;
 }
 .bottom-info {

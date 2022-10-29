@@ -1,3 +1,6 @@
+/**************** BASE STYLE ****************/
+
+/******** HEADER ********/
 header {
     display: flex;
     align-items: center;
@@ -5,16 +8,19 @@ header {
     flex-wrap: wrap;
     text-align: center;
 }
-.logo {
-    height: 4.5rem;
-    margin: auto;
-}
-
 header h1 {
     font-family: "Kanit", sans-serif;
     color: #003566;
     margin-left: 20px;
 }
+
+
+.logo {
+    height: 4.5rem;
+    margin: auto;
+}
+
+
 
 .upside-bar {
     width: 100%;
@@ -120,6 +126,12 @@ nav ul.menu {display:block}
     border: none;
 }
 
+/******** BASE MAIN ********/
+
+main {
+    font-family: "Raleway",sans-serif;
+}
+
 main div {
     width: auto;
     height: 15rem;
@@ -127,7 +139,7 @@ main div {
     border: 0.125rem solid #000;
     margin: 1em;
     padding: 1rem;
-    font-family: "Raleway",sans-serif;
+    
 }
 
 main div h3 {
@@ -135,6 +147,8 @@ main div h3 {
     color: #FFC300;
     font-style: italic;
 }
+
+/******** HOMEPAGE MAIN ********/
 .news {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -209,25 +223,6 @@ main div h3 {
     color: #FFD60A;
 }
 
-/*
-.spot-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-}
-.spot-1 img {
-    width: 30%;
-}
-.spot-1 span {
-    color: #FFD60A;
-    margin-top: 1em;
-}
-.spot-1 a {
-    text-decoration: none;
-    color: #FFD60A;
-}
-*/
 .optional-spotlight {
     display: none;
 }
@@ -280,6 +275,52 @@ main div h3 {
     margin-top: 5px;
 }
 
+/******** DISCOVER MAIN ********/
+.discoverpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0 2rem;
+}
+.discoverpage h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #001D3D;
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 1rem;
+}
+.discover-section {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    text-align: center;
+    
+}
+.discover-section h3 {
+    margin: 0 auto;
+}
+
+.demographics {
+    background-color: #003566;
+    width: 100%;
+    max-width: 540px;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    border: 5px solid #000814;
+}
+.demographics h2 {
+    color: #FFD60A;
+    text-align: center;
+    margin: 20px;
+}
+.demographics ul {
+    color: #fff;
+}
+
+/******** FOOTER ********/
 footer {
     background: #000814;
     color: #FFC300;
@@ -346,7 +387,7 @@ footer span {
     display: block;
     width: 30%;
     padding: .8rem 2vw;
-    margin: 0;
+    margin-top: -50px;
     text-decoration: none;
     color: #000;
     background-color: #FFC300;
@@ -357,7 +398,8 @@ footer span {
     font-family: "Raleway",sans-serif;
     text-align: center;
     position: relative;
-    bottom: -4.5rem;
+    top: 70px;
+    left:20px;
 
 }
 .hero picture { 

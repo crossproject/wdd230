@@ -1,3 +1,4 @@
+try {
 const wind = parseFloat(document.getElementById("wind-speed").textContent);
 const temperature = parseFloat(document.getElementById("temp-celcius").textContent);
 let tempFahr = temperature * 9/5 + 32;
@@ -10,3 +11,6 @@ if (temperature < 10 || wind > 4.8) {
 
 const windChillWrite = document.getElementById("wind-chill");
 windChillWrite.innerHTML = windChill;
+} catch (x) {
+    console.log(x);
+}
