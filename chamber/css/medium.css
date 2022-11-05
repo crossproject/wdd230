@@ -130,6 +130,13 @@ footer .logo {
 .discover-section picture img {
     width: 300px;
 }
-
+.join-dv {
+    flex-direction: row;
+    align-items: flex-start;
+}
+.form {
+    margin-right: 5rem;
+    width: 80%;
+}
 }
 

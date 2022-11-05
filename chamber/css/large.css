@@ -135,10 +135,16 @@ width: 500px;
     filter: blur(0px) grayscale(0%);
 }
 
+/********* JOIN FORM **********/
+.join-dv{
+    
+    
+}
 
-
-
-
+.form {
+    margin-right: 20rem;
+    
+}
 
 
 footer {

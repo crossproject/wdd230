@@ -1,4 +1,4 @@
-// TEST
+// IntersectionObserver
 const imagesToLoad = document.querySelectorAll("picture img[data-src]");
 
 const imgOptions = {
@@ -34,7 +34,7 @@ else {
         loadImages(img);
     });
 }
-// END TEST //
+
 
 
 // Header Date
@@ -87,6 +87,14 @@ function toggleMenu() {
 
 const menuBtn = document.getElementById("menu-btn");
 menuBtn.onclick = toggleMenu;
+
+// Hidden value on form
+const hiddenVal = document.getElementById("hidden-data-value");
+try {
+    hiddenVal.setAttribute("value",date);
+} catch (error) {
+    console.log(error)
+}
 
 
 // Footer Year
