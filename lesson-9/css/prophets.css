@@ -1,0 +1,39 @@
+body{
+    padding: 0 2rem;
+}
+h1,
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    color: rgb(77,77,150);
+    text-align: center;
+}
+.cards {
+    margin: 0 auto;
+    background-color: rgb(221,221,221);
+    box-shadow: 0 0 30px #555;
+    padding: 20px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    min-width: 300px;
+}
+span {
+    font-family: 'M PLUS 1p', sans-serif;
+    text-align: center;
+    
+}
+section {
+    background-color: rgb(185,185,204);
+    border: 2px solid rgb(82, 82, 152);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+section img {
+    width: 80%;
+    margin: 10px 0;
+    max-width: 280px;
+}
