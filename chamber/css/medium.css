@@ -73,7 +73,8 @@ main {
 }
 
 /* MEMBERS LIST VIEW */
-.list-view section {
+.list-view section,
+.list-view .list-header  {
     grid-template-columns: repeat(4,1fr);
 }
 .list-view section img {

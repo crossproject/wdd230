@@ -149,10 +149,12 @@ width: 500px;
 .grid-view section img:hover {
     filter: grayscale(0);
 }
-.list-view section {
+.list-view section,
+.list-view .list-header  {
     grid-template-columns: repeat(5,1fr);
 }
-.list-view section a {
+.list-view section a,
+.list-view section .a {
     display: block;
 }
 

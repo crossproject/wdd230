@@ -514,6 +514,9 @@ form label.top input:required:valid {
     width: 95%;
     grid-gap: 5px;
 }
+.grid-view .list-header {
+    display: none;
+}
 .grid-view section {
     display: flex;
     flex-direction: column;
@@ -538,7 +541,9 @@ form label.top input:required:valid {
     display: flex;
     flex-direction: column;
 }
-.list-view section {
+
+.list-view section,
+.list-view .list-header  {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 5px;
@@ -547,8 +552,20 @@ form label.top input:required:valid {
     margin: 5px 0;
     padding: 0;
 }
+.list-view .list-header,
+.list-view .list-header h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    text-decoration: none;
+}
+.list-view .list-header {
+    margin-bottom: 10px;
+}
 .list-view section img,
-.list-view section a {
+.list-view section a,
+.list-view section .a {
     display: none;
 }
 
