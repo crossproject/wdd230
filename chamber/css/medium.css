@@ -72,6 +72,14 @@ main {
     margin-top: 0.5rem;
 }
 
+/* MEMBERS LIST VIEW */
+.list-view section {
+    grid-template-columns: repeat(4,1fr);
+}
+.list-view section img {
+    display: block;
+}
+
 footer .logo {
     margin: 0;
     margin-right: 1em;

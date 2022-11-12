@@ -88,6 +88,103 @@ function toggleMenu() {
 const menuBtn = document.getElementById("menu-btn");
 menuBtn.onclick = toggleMenu;
 
+//////// DIRECTORY SCRITPS ////////
+// Change View
+try {
+    function toggleViewMenu() {
+        document.getElementById("view-btn").classList.toggle("chngview");
+        document.getElementById("members-cards").classList.toggle("list-view");
+    }
+
+    const viewBtn = document.getElementById("view-btn");
+    viewBtn.onclick = toggleViewMenu;
+} catch (error) {
+    console.log(error)
+}
+
+// Fetch request
+try {
+
+    const directoryJson = "js/data.json";
+    const membersCards = document.querySelector("#members-cards");
+
+    async function getMembersInfo(jsonFile) {
+        const response = await fetch(jsonFile);
+        if (response.ok) {
+          const data = await response.json();
+          doStuff(data);
+        }
+    }
+
+    function doStuff(data){
+    results = data;
+    results.members.forEach(displayMembers);
+    }
+    
+
+    function displayMembers (member){
+
+        let card = document.createElement("section");
+        let title = document.createElement("h3");
+        let logo = document.createElement("img");
+        let address = document.createElement("span");
+        let phone = document.createElement("span");
+        let url = document.createElement("a");
+
+        title.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phone}`;
+        url.textContent = `${member.url}`;
+        
+        logo.setAttribute("src", member.image);
+        logo.setAttribute("alt", `${member.name} Logo`);
+        logo.setAttribute("loading", "lazy");
+        url.setAttribute("href", member.url);
+        url.setAttribute("target", "_blank");
+
+        card.appendChild(logo);
+        card.appendChild(title);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(url);
+        
+    
+        membersCards.appendChild(card);
+    }
+    
+    getMembersInfo(directoryJson);
+
+} catch (fetchError) {
+    console.log(fetchError);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Hidden value on form
 const hiddenVal = document.getElementById("hidden-data-value");
 try {

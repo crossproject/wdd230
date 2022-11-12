@@ -4,7 +4,7 @@
         "name": "Artes Gráficas del Litoral",
         "address": "Mariscal Antonio José de Sucre Nº 1530",
         "phone": "011 5275-4489",
-        "url": "aglsa.com.ar",
+        "url": "https://aglsa.com.ar/",
         "image": "images/directory/agl.jpg",
         "membership-level": 0,
         "membership": "Free"
@@ -13,7 +13,7 @@
         "name": "Alvear Supermercados",
         "address": "Alvear 3919",
         "phone": "0342 455-4334",
-        "url": "alvearsupermercados.com.ar",
+        "url": "https://alvearsupermercados.com.ar/",
         "image": "images/directory/alvear.jpg",
         "membership-level": 4,
         "membership": "Gold"
@@ -22,7 +22,7 @@
         "name": "Benuzzi Inmobiliaria",
         "address": "Av. Gral. López 2754",
         "phone": "0342 452-9234",
-        "url": "benuzzi.com",
+        "url": "https://benuzzi.com/",
         "image": "images/directory/benuzzi.jpg",
         "membership-level": 1,
         "membership": "Bronze"
@@ -31,7 +31,7 @@
         "name": "Ente Administrador Puerto Santa Fe",
         "address": "Cabecera Dársena I",
         "phone": "0342 455-8400",
-        "url": "puertosfe.com",
+        "url": "https://puertosfe.com/",
         "image": "images/directory/eapsf.jpg",
         "membership-level": 0,
         "membership": "Free"
@@ -40,7 +40,7 @@
         "name": "El Litoral",
         "address": "Belgrano 2725",
         "phone": "0342 455-6799",
-        "url": "ellitoral.com",
+        "url": "https://ellitoral.com/",
         "image": "images/directory/ellitoral.jpg",
         "membership-level": 3,
         "membership": "Silver"
@@ -49,7 +49,7 @@
         "name": "Faben S.A.",
         "address": "Av Int, Av. Int. O. Zobboli 1249",
         "phone": "03492 44-0294",
-        "url": "faben.com.ar",
+        "url": "https://faben.com.ar/",
         "image": "images/directory/faben.jpg",
         "membership-level": 3,
         "membership": "Silver"
@@ -58,7 +58,7 @@
         "name": "Frigorifico Recreo",
         "address": "Ruta Nacional 11 (Km 478/479)",
         "phone": "0342 490-5111",
-        "url": "frigorificorecreo.com",
+        "url": "https://frigorificorecreo.com/",
         "image": "images/directory/recreo.jpg",
         "membership-level": 1,
         "membership": "Bronze"
@@ -67,7 +67,7 @@
         "name": "Instituto Rizzoli",
         "address": "Belgrano 3101",
         "phone": "0342 489-2484",
-        "url": "rizzoli.com.ar",
+        "url": "https://rizzoli.com.ar/",
         "image": "images/directory/rizzoli.jpg",
         "membership-level": 0,
         "membership": "Free"
@@ -76,7 +76,7 @@
         "name": "Sweet S.A.",
         "address": "Lisandro de la Torre 3849",
         "phone": "0342 459-3111",
-        "url": "sweetsa.com.ar",
+        "url": "https://sweetsa.com.ar/",
         "image": "images/directory/sweet.jpg",
         "membership-level": 4,
         "membership": "Gold"

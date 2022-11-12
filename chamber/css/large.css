@@ -136,16 +136,25 @@ width: 500px;
 }
 
 /********* JOIN FORM **********/
-.join-dv{
-    
-    
-}
 
 .form {
     margin-right: 20rem;
     
 }
 
+/********* DIRECTORY PAGE **********/
+.grid-view section img {
+    filter: grayscale(1);
+}
+.grid-view section img:hover {
+    filter: grayscale(0);
+}
+.list-view section {
+    grid-template-columns: repeat(5,1fr);
+}
+.list-view section a {
+    display: block;
+}
 
 footer {
     font-size: 1rem;
