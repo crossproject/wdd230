@@ -501,6 +501,12 @@ form label.top input:required:valid {
     background: transparent;
     border: none;
     width: 1rem;
+    margin: 0;
+    margin-left: -45px;
+    padding: 0;
+}
+.directory button span {
+    font-size: 3rem;
 }
 .directory-content {
     border: none;
