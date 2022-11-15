@@ -49,6 +49,7 @@ dateDiv.innerHTML = `<span>${fullDate}</span>`;
 
 // Enable Banner
 const weekDay = date.getDay();
+try {
 const banner = document.getElementById("monday-tuesday-banner");
 
 function enableBanner() {
@@ -69,7 +70,9 @@ switch (weekDay) {
         enableBanner();
         break
 }
-
+} catch (error) {
+    console.log(error)
+}
 // Close Banner
 
 const closeBtn = document.getElementById("close-banner");
@@ -157,31 +160,6 @@ try {
 } catch (fetchError) {
     console.log(fetchError);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
