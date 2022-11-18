@@ -281,7 +281,10 @@ main div h3 {
 .weather-wspeed {
     margin-top: 5px;
 }
-
+.weather .credits {
+    margin-top: 5px;
+    font-size: 0.7rem;
+}
 /******** DISCOVER MAIN ********/
 .discoverpage {
     display: flex;
