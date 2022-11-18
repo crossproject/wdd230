@@ -11,7 +11,6 @@ async function apiFetch(url) {
       if (response.ok) {
         const data = await response.json();
         displayResults(data,weatherIcon,temperature,weatherStatus,windSpeed,windChill);
-        console.log(data)
       } else {
           throw Error(await response.text());
       }
