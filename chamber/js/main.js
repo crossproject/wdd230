@@ -1,3 +1,19 @@
+// Randomize array
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+    
+    while (currentIndex != 0) {
+  
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
 // IntersectionObserver
 const imagesToLoad = document.querySelectorAll("picture img[data-src]");
 
@@ -120,9 +136,24 @@ try {
     }
 
     function doStuff(data){
-    results = data;
-    results.members.forEach(displayMembers);
-    }
+        results = data;
+
+        try{
+            let goldMembers = getGoldMembers(results);
+            
+            displaySpotlights(goldMembers);
+        } catch (error) {
+            console.log(error);
+        };
+
+        try{
+            results.members.forEach(displayMembers);
+            
+        } catch (error) {
+            console.log(error);
+        };
+
+    };
     
 
     function displayMembers (member){
@@ -155,12 +186,66 @@ try {
         membersCards.appendChild(card);
     }
     
+    function getGoldMembers(data){
+        let orderedGoldMembers = [];
+        for (let i = 0; i < data.members.length; i++) {
+            
+            if (data.members[i].membershiplevel == 4) {
+                orderedGoldMembers.push(data.members[i]);
+            };
+            
+          };
+        let goldMembers = shuffle(orderedGoldMembers);
+        return goldMembers.slice(0,3);
+    };
+
+    function displaySpotlights(goldMembers){
+
+        for (let spot = 1; spot < 3; spot++) {
+            let member = goldMembers[spot]
+            let spotlight = document.getElementById(`spot-${spot}`);
+            let title = document.createElement("h3");
+            let logo = document.createElement("img");
+            let address = document.createElement("span");
+            let phone = document.createElement("span");
+            let url = document.createElement("a");
+
+            title.textContent = `${member.name}`;
+            address.textContent = `${member.address}`;
+            phone.textContent = `${member.phone}`;
+            url.textContent = `${member.url}`;
+            
+            logo.setAttribute("src", member.image);
+            logo.setAttribute("alt", `${member.name} Logo`);
+            logo.setAttribute("loading", "lazy");
+            url.setAttribute("href", member.url);
+            url.setAttribute("target", "_blank");
+
+            spotlight.appendChild(logo);
+            spotlight.appendChild(title);
+            spotlight.appendChild(address);
+            spotlight.appendChild(phone);
+            spotlight.appendChild(url);
+        }
+
+    };
+
     getMembersInfo(directoryJson);
 
 } catch (fetchError) {
     console.log(fetchError);
 }
 
+
+// Validate form
+try {
+    const submitBtn = document.querySelector(".submitBtn");
+    submitBtn.onclick = validateForm;
+
+    function validateForm() {document.querySelector(".form").classList.add("validated-form")};
+} catch (error) {
+    console.log(error)
+}
 
 
 // Hidden value on form

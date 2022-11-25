@@ -5,8 +5,8 @@
         "address": "Mariscal Antonio José de Sucre Nº 1530",
         "phone": "011 5275-4489",
         "url": "https://aglsa.com.ar/",
-        "image": "images/directory/agl.jpg",
-        "membership-level": 0,
+        "image": "images/directory/agl.png",
+        "membershiplevel": 0,
         "membership": "Free"
       },
       {
@@ -14,8 +14,8 @@
         "address": "Alvear 3919",
         "phone": "0342 455-4334",
         "url": "https://alvearsupermercados.com.ar/",
-        "image": "images/directory/alvear.jpg",
-        "membership-level": 4,
+        "image": "images/directory/alvear.png",
+        "membershiplevel": 4,
         "membership": "Gold"
       },
       {
@@ -23,8 +23,8 @@
         "address": "Av. Gral. López 2754",
         "phone": "0342 452-9234",
         "url": "https://benuzzi.com/",
-        "image": "images/directory/benuzzi.jpg",
-        "membership-level": 1,
+        "image": "images/directory/benuzzi.png",
+        "membershiplevel": 1,
         "membership": "Bronze"
       },
       {
@@ -32,8 +32,8 @@
         "address": "Cabecera Dársena I",
         "phone": "0342 455-8400",
         "url": "https://puertosfe.com/",
-        "image": "images/directory/eapsf.jpg",
-        "membership-level": 0,
+        "image": "images/directory/eapsf.png",
+        "membershiplevel": 0,
         "membership": "Free"
       },
       {
@@ -41,8 +41,8 @@
         "address": "Belgrano 2725",
         "phone": "0342 455-6799",
         "url": "https://ellitoral.com/",
-        "image": "images/directory/ellitoral.jpg",
-        "membership-level": 3,
+        "image": "images/directory/ellitoral.png",
+        "membershiplevel": 3,
         "membership": "Silver"
       },
       {
@@ -50,17 +50,17 @@
         "address": "Av Int, Av. Int. O. Zobboli 1249",
         "phone": "03492 44-0294",
         "url": "https://faben.com.ar/",
-        "image": "images/directory/faben.jpg",
-        "membership-level": 3,
-        "membership": "Silver"
+        "image": "images/directory/faben.png",
+        "membershiplevel": 4,
+        "membership": "Gold"
       },
       {
         "name": "Frigorifico Recreo",
         "address": "Ruta Nacional 11 (Km 478/479)",
         "phone": "0342 490-5111",
         "url": "https://frigorificorecreo.com/",
-        "image": "images/directory/recreo.jpg",
-        "membership-level": 1,
+        "image": "images/directory/recreo.png",
+        "membershiplevel": 1,
         "membership": "Bronze"
       },
       {
@@ -68,8 +68,8 @@
         "address": "Belgrano 3101",
         "phone": "0342 489-2484",
         "url": "https://rizzoli.com.ar/",
-        "image": "images/directory/rizzoli.jpg",
-        "membership-level": 0,
+        "image": "images/directory/rizzoli.png",
+        "membershiplevel": 0,
         "membership": "Free"
       },
       {
@@ -77,8 +77,8 @@
         "address": "Lisandro de la Torre 3849",
         "phone": "0342 459-3111",
         "url": "https://sweetsa.com.ar/",
-        "image": "images/directory/sweet.jpg",
-        "membership-level": 4,
+        "image": "images/directory/sweet.png",
+        "membershiplevel": 4,
         "membership": "Gold"
       }
     ]
