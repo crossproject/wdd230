@@ -103,6 +103,7 @@ header {
 
 .discover-section {
     display: grid;
+    align-items: start;
     column-gap: 2rem;
 
 }
@@ -114,9 +115,11 @@ header {
 }
 
 .discover-section p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     grid-column: 2;
     grid-row: 2;
+    text-align: left;
+    margin-top: 0;
 }
 
 .discover-section picture {
@@ -128,7 +131,7 @@ header {
 .discover-section picture img {
 opacity: 0.5;
 filter: blur(1px) grayscale(10%);
-width: 500px;
+width: 350px;
 }
 .discover-section picture img:hover {
     opacity: 1;

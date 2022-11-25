@@ -360,7 +360,9 @@ main div h3 {
 .discover-section picture img {
     width: 200px;
 }
-
+.discover-section p {
+    margin-top: 5px;
+}
 .demographics {
     background-color: #003566;
     width: 100%;
@@ -475,11 +477,14 @@ form input.submitBtn:hover {
 }
 
 .validated-form label.top input:required {
-    background-color: rgba(255, 0, 0, 0.301);
+    /*background-color: rgba(255, 0, 0, 0.301);*/
+    box-shadow: inset 0px 1px 16px 0px #7a0d0d;
+    
 }
 
 .validated-form label.top input:required:valid {
-    background-color: rgba(0, 255, 0, 0.301);
+    /*background-color: rgba(0, 255, 0, 0.301);*/
+    box-shadow: inset 0px 1px 16px 0px #096a0b;
 }
 /******** MEMBERSHIP PRICES **********/
 .membership-prices {

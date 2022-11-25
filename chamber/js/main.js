@@ -200,8 +200,7 @@ try {
     };
 
     function displaySpotlights(goldMembers){
-
-        for (let spot = 1; spot < 3; spot++) {
+        for (let spot = 0; spot < 3; spot++) {
             let member = goldMembers[spot]
             let spotlight = document.getElementById(`spot-${spot}`);
             let title = document.createElement("h3");
