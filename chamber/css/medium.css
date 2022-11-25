@@ -88,6 +88,11 @@ main {
 .list-view section img {
     display: block;
 }
+.list-view img {
+    max-width: 150px;
+}
+
+/* MEMBERS GRID VIEW */
 
 footer .logo {
     margin: 0;
