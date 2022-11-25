@@ -177,10 +177,6 @@ main div h3 {
     font-size: 1.8rem;
 }
 .news {
-    /*
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    */
     display: flex;
     flex-direction: column;
     height: auto;
@@ -292,14 +288,12 @@ main div h3 {
     margin: 0.5rem;
 }
 .weather h3 {
-    margin: 0;
-    color: #003566;
-}
-.weather h4 {
-    font-size: 3rem;
-    margin: auto 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: auto 0;
     min-width: 120px;
 }
+
 .weather span {
     text-align: center;
 
@@ -316,12 +310,12 @@ main div h3 {
 .weather-status {
     font-weight: bold;
     border-bottom: 2px solid #000;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .weather-wchill,
 .weather-wspeed {
     font-style: italic;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .weather-wspeed {
     margin-top: 5px;
