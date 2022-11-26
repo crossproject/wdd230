@@ -338,7 +338,9 @@ main {
     flex-direction: column;
     align-items: center;
 }
-.joinpage h2 {
+.joinpage h2,
+.thankyou h2,
+.response h2 {
     font-family: "Kanit",sans-serif;
     font-size: 2.5rem;
 }
@@ -617,6 +619,12 @@ form input.submitBtn:hover {
     margin: 15px
 }
 
+/* MESSAGE PAGES */
+.thankyou h2,
+.response h2 {
+    font-family: "Kanit",sans-serif;
+    font-size: 2rem;
+}
 /******** FOOTER ********/
 footer {
     background: #000814;
