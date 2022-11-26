@@ -291,7 +291,7 @@ main {
     padding: 0 2rem;
 }
 .discoverpage h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #001D3D;
     font-family: "Kanit", sans-serif;
@@ -337,6 +337,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.joinpage h2 {
+    font-family: "Kanit",sans-serif;
+    font-size: 2.5rem;
 }
 .join-dv {
     display: flex;
@@ -452,22 +456,33 @@ form input.submitBtn:hover {
     width: 100%;
     height: auto;
     background: none;
-    box-shadow: 0 2px 5px #000
+    box-shadow: 0 2px 5px #000;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    border: 2px solid #000;
+    border-radius: 40px;
+    margin: 10px;
 }
 .prices h3 {
-    color: #003566;
+    font-family: "Kanit", sans-serif;
     font-size: 3rem;
-    background: gray;
+    /*background: gray;*/
     overflow: hidden;
+    border-radius: 40px;
+    margin: 0;
+    padding: 5px 0;
 }
 .prices h4 {
     font-size: 2rem;
+    margin: 20px 0;
 }
 .prices span {
     display: block;
     font-size: 1.5rem;
     text-align: left;
     margin-left: 10px;
+    margin-bottom: 30px;
 }
 
 .np-membership h3 {
@@ -497,6 +512,10 @@ form input.submitBtn:hover {
 }
 .directory h2 {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #001D3D;
+    font-family: "Kanit", sans-serif;
 }
 .directory button {
     margin: .2rem 2vw;
@@ -578,6 +597,25 @@ form input.submitBtn:hover {
     display: none;
 }
 
+/******** CONTACT *******/
+.contactpage {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contactpage h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #001D3D;
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.find-info {
+    margin: 15px
+}
 
 /******** FOOTER ********/
 footer {
@@ -622,6 +660,10 @@ footer span {
 .contact-info {
     display: flex;
     flex-direction: column;
+}
+.contact-info span a {
+    text-decoration: none;
+    color: #FFC300;
 }
 .autor {
     font-weight: bold;

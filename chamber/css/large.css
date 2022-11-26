@@ -175,6 +175,7 @@ width: 350px;
 .list-view section img {
     filter: grayscale(0);
 }
+
 .list-view section a,
 .list-view section .a {
     display: block;
@@ -189,8 +190,19 @@ footer {
     flex-direction: row;
 }
 
+/* CONTACT PAGE*/
+.contactpage {
+    max-width: 1200px;
+}
 
+.contactpage iframe {
+    min-width: 800px;
+    min-height: 400px;
+}
 
+.find-info {
+    margin-top: 20px;
+}
 
 
 .weather {
